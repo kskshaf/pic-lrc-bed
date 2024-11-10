@@ -1,0 +1,11 @@
+{
+  "name": "pic-lrc-bed",
+  "version": "1.0.0",
+  "description": "pic-lrc-bed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kskshaf",
+  "license": "ISC"
+}
