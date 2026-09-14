@@ -1,0 +1,39 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "headers": [
+    {
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "max-age=864000"
+        },
+        {
+          "key": "Vercel-CDN-Cache-Control",
+          "value": "max-age=864000"
+        }
+      ]
+    },
+    {
+      "source": "/music/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "max-age=86400"
+        },
+        {
+          "key": "Vercel-CDN-Cache-Control",
+          "value": "max-age=86400"
+        }
+      ]
+    }
+  ]
+}
